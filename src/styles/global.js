@@ -8,6 +8,7 @@ export default createGlobalStyle`
     outline: 0;
     box-sizing: border-box;
   }
+  
   body {
     height: 100vh;
     display: flex;
@@ -15,13 +16,16 @@ export default createGlobalStyle`
     justify-content: center;
     -webkit-font-smoothing: antialiased;
   }
+
   body, input, button {
     font: 14px Roboto, sans-serif;
   }
+
   #root {
-    background: orange;
-    width: 1200px;
+    width: 1000px;
+    height: 80vh;
   }
+
   button {
     cursor: pointer;
   }

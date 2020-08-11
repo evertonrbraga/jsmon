@@ -7,7 +7,7 @@ import RightSide from "./right-side";
 
 function App() {
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ height: "100%", display: "flex" }}>
       <GlobalStyle />
       <LeftSide />
       <RightSide />
