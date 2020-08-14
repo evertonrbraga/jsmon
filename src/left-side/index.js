@@ -1,15 +1,14 @@
 import React from "react";
 
+import { data } from "../data";
 import Button from "../components/Button";
 import ScreenItem from "./components/ScreenItem";
 import { Container } from "./styles";
 
-const data = ["JavaScript", "Node.js"];
+// const data = ["JavaScript", "Node.js"];
 
 const LeftSide = () => {
-  const techs = data.map((item, index) => (
-    <ScreenItem key={`data-${index}`} name={item} />
-  ));
+  const techs = data.map((item) => <ScreenItem key={item.id} item={item} />);
   return (
     <Container>
       <div className="screen">{techs}</div>
